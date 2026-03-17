@@ -1,0 +1,8 @@
+def gayu(a):
+    if(a==1):
+        return
+    print(a+10,end=" ")
+    gayu(a-1)
+    print(a)
+    
+gayu(4)
