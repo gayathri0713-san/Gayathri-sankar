@@ -1,0 +1,23 @@
+import random
+n=int(input("Enter number of players:"))
+names=[]
+gender=[]
+for i in range(n):
+    name=input("Enter name: ")
+    names.append(name)
+    gen = input("Enter gender (M/F): ")
+    gender.append(gen)
+
+pair=[]
+for i in range(n-1):
+    for j in range(i+1,n):
+        pair.append((i,j))
+random.shuffle(pair)    
+       
+pos=1
+for i, j in pair:
+    if gender[i] != gender[j]:
+        print("Pair-{} : {} vs {} ".format(pos,names[i], names[j]))
+    else:
+        print("NOT APPLICABLE")
+    pos=pos+1
