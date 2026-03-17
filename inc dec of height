@@ -1,0 +1,20 @@
+def calculate(x,y,z):
+    height=0
+    mins=0
+    i=1
+    while(True):
+        if(i%2!=0):
+            height=height+y 
+            i=i+1 
+            mins=mins+1
+        else:
+            height=height-z
+            i=i+1
+            mins=mins+1
+        if(height==x):
+            break
+        
+
+    print("Total mins",mins)
+calculate(30,10,5)
+calculate(21,5,3)
