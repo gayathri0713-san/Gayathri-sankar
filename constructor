@@ -1,0 +1,10 @@
+class React:
+    def  __init__(self,a,b):
+        self.l=a
+        self.b=b
+    def  display(self):
+        print(self.l*self.b)
+a=React(20,30)
+b=React(10,30)
+a.display()
+b.display()
